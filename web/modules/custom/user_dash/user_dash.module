@@ -44,12 +44,11 @@ function user_dash_preprocess_node($variables){
     $variables['$content_type_name'] ==='organisation' |
     $variables['$content_type_name'] ==='pnj' |
     $variables['$content_type_name'] ==='region' |
-    $variables['$content_type_name'] ==='scenario' ) {
+    $variables['$content_type_name'] ==='scenario') {
     ///get field_public value
      if (!is_null($node)) {
        $publicvalue = $node->get('field_public')->getValue();
          $variables['$public_value'] = $publicvalue[0]["value"];
-
      }
   }
 
