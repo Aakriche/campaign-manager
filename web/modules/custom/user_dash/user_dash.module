@@ -49,7 +49,6 @@ function user_dash_preprocess_node($variables){
      if (!is_null($node)) {
        $publicvalue = $node->get('field_public')->getValue();
          $variables['$public_value'] = $publicvalue[0]["value"];
-
      }
   }
 
