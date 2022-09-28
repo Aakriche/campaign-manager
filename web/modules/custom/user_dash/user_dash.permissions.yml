@@ -1,0 +1,4 @@
+administer user_dash configuration:
+  title: 'Administer user_dash configuration'
+  description: 'Optional description.'
+  restrict access: true

@@ -1,0 +1,5 @@
+name: user_dash
+type: module
+description: Add a user dashboard
+package: Custom
+core_version_requirement: ^9 || ^10
