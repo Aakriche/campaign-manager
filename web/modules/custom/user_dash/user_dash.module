@@ -21,7 +21,7 @@ function user_dash_preprocess_node($variables){
     $author = \Drupal\user\Entity\User::load($uid);
     if (!is_null($user)) {
       $authorname = $author->getDisplayName();
-      $variables['$authorname'] = $authorname;
+        $variables['$authorname'] = $authorname;
       // {{ username }} will be available within block.html.twig.
     }
   }
@@ -32,34 +32,37 @@ function user_dash_preprocess_node($variables){
     $contenttype = \Drupal\node\Entity\Node::load($nid);
     if (!is_null($user)) {
       $content_type_name = $contenttype->getType();
-      if(!is_null($content_type_name)) {
         $variables['$content_type_name'] = $content_type_name;
-      }
     }
   }
 //only in these nodes
-  if ($variables['$content_type_name'] === 'rencontre' |
-    $variables['$content_type_name'] ==='lieu' |
-    $variables['$content_type_name'] ==='creature' |
-    $variables['$content_type_name'] ==='campagne' |
-    $variables['$content_type_name'] ==='organisation' |
-    $variables['$content_type_name'] ==='pnj' |
-    $variables['$content_type_name'] ==='region' |
-    $variables['$content_type_name'] ==='scenario') {
-    ///get field_public value
-    if (!is_null($node)) {
-      $publicvalue = $node->get('field_public')->getValue();
-      $variables['$public_value'] = $publicvalue[0]["value"];
-    }
-  }
-
-  if($variables["is_admin"] === false){
-    if ($username !== $authorname) {
-      if ($variables['$public_value'] === "0"){
-        throw new \Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException();
-
+  if(isset($variables['$content_type_name'])) {
+    if ($variables['$content_type_name'] === 'rencontre' |
+      $variables['$content_type_name'] === 'lieu' |
+      $variables['$content_type_name'] === 'creature' |
+      $variables['$content_type_name'] === 'campagne' |
+      $variables['$content_type_name'] === 'organisation' |
+      $variables['$content_type_name'] === 'pnj' |
+      $variables['$content_type_name'] === 'region' |
+      $variables['$content_type_name'] === 'scenario') {
+      ///get field_public value
+      if (!is_null($node)) {
+        $publicvalue = $node->get('field_public')->getValue();
+        if(isset($publicvalue)) {
+          $variables['$public_value'] = $publicvalue[0]["value"];
+        }
       }
     }
   }
 
+  if($variables["is_admin"] === false) {
+    if (isset($authorname) & isset($variables['$public_value'])) {
+      if ($username !== $authorname) {
+        if ($variables['$public_value'] === "0") {
+          throw new \Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException();
+
+        }
+      }
+    }
+  }
 }

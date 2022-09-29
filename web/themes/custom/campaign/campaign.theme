@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming
+ */
+
+use \Drupal\Core\Asset\AttachedAssetsInterface;
+
+/**
+ * Implements hook_css_alter().
+ */
+function campaign_css_alter(&$css, AttachedAssetsInterface $assets) {
+  $oliveroThemePath = drupal_get_path('theme', 'olivero');
+  $myThemePath = drupal_get_path('theme', 'campaign');
+  // Replace all css files by our files.
+  foreach ($css as $cssFile => $value) {
+    if (strpos($cssFile, $oliveroThemePath) !== FALSE) {
+      $css[$cssFile]['data'] = str_replace($oliveroThemePath, $myThemePath, $css[$cssFile]['data']);
+    }
+  }
+}
