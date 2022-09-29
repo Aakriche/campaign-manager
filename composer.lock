@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d560f875eaf31f7d47e2b097cb28dc9a",
+    "content-hash": "b0175cbcdab612aba603d79527b31b16",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2025,51 +2025,49 @@
             }
         },
         {
-            "name": "drupal/business_responsive_theme",
-            "version": "2.0.3",
+            "name": "drupal/bootstrap_library",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/business_responsive_theme.git",
-                "reference": "2.0.3"
+                "url": "https://git.drupalcode.org/project/bootstrap_library.git",
+                "reference": "2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/business_responsive_theme-2.0.3.zip",
-                "reference": "2.0.3",
-                "shasum": "f63ee02a793ba3380cf3f702572e5d3f8f9b0959"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_library-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "fd9e69f48a76a78366fc2471df6a12f8d52a187c"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9",
+                "twbs/bootstrap": "*"
             },
-            "type": "drupal-theme",
+            "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.3",
-                    "datestamp": "1651500005",
+                    "version": "2.0.1",
+                    "datestamp": "1633919311",
                     "security-coverage": {
-                        "status": "revoked",
-                        "message": "Project has been unsupported by the Drupal Security Team"
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
-                    "name": "Unsupported Projects",
-                    "homepage": "https://www.drupal.org/user/291168"
-                },
-                {
-                    "name": "zymphonies-guy",
-                    "homepage": "https://www.drupal.org/user/2280310"
+                    "name": "Alberto Siles",
+                    "homepage": "https://www.drupal.org/user/827704",
+                    "email": "alberto@siles.pe"
                 }
             ],
-            "description": "Zymphonies Drupal 8 Responsive Theme. Developed & Designed by <a href=http://www.zymphonies.com>Zymphonies</a><br/>Contact us for Drupal Design & Development <a href=mailto:info@zymphonies.com>info@zymphonies.com</a>",
-            "homepage": "https://www.drupal.org/project/business_responsive_theme",
+            "description": "Provides Bootstrap Integration.",
+            "homepage": "http://drupal.org/project/bootstrap_library",
             "support": {
-                "source": "https://git.drupalcode.org/project/business_responsive_theme"
+                "source": "https://git.drupalcode.org/project/bootstrap_library"
             }
         },
         {
@@ -3332,94 +3330,6 @@
             "homepage": "https://www.drupal.org/project/rabbit_hole",
             "support": {
                 "source": "https://git.drupalcode.org/project/rabbit_hole"
-            }
-        },
-        {
-            "name": "drupal/ruhi",
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ruhi.git",
-                "reference": "1.0.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ruhi-1.0.5.zip",
-                "reference": "1.0.5",
-                "shasum": "84ac0e66a17a8e6d245dd3c5968c7d4c70cf619f"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "1.0.5",
-                    "datestamp": "1646480546",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "ravis",
-                    "homepage": "https://www.drupal.org/user/79351"
-                }
-            ],
-            "description": "Ruhi is a multi-purpose Drupal 8 and 9 theme by <a href=\"https://www.drupar.com/\" target=\"_blank\">Drupar.com</a>",
-            "homepage": "https://www.drupal.org/project/ruhi",
-            "support": {
-                "source": "https://git.drupalcode.org/project/ruhi"
-            }
-        },
-        {
-            "name": "drupal/thex",
-            "version": "9.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/thex.git",
-                "reference": "9.2.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/thex-9.2.0.zip",
-                "reference": "9.2.0",
-                "shasum": "e117f6ed431a65ab7160c64a7bcbdd3d3de6ddb3"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "9.2.0",
-                    "datestamp": "1661789116",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "ravis",
-                    "homepage": "https://www.drupal.org/user/79351"
-                }
-            ],
-            "description": "<p>A clean, light weight and mobile optimized base theme for Drupal 9 and 10 by <a href=\"https://www.drupar.com/\" target=\"_blank\">Drupar.com</a><br /><a href=\"https://www.drupar.com/theme/thex\" target=\"_blank\">Theme Page</a> | <a href=\"https://www.drupar.com/doc/thex\" target=\"_blank\">Theme User Guide</a> | <a href=\"https://www.drupal.org/project/thex\" target=\"_blank\">Project Page</a></p>",
-            "homepage": "https://www.drupal.org/project/thex",
-            "support": {
-                "source": "https://git.drupalcode.org/project/thex"
             }
         },
         {
@@ -8256,6 +8166,56 @@
                 }
             ],
             "time": "2022-08-02T15:47:23+00:00"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v5.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "23e50829f958ea1d741d63e2781716be037e4644"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/23e50829f958ea1d741d63e2781716be037e4644",
+                "reference": "23e50829f958ea1d741d63e2781716be037e4644",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                },
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "https://getbootstrap.com/",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "web"
+            ],
+            "support": {
+                "issues": "https://github.com/twbs/bootstrap/issues",
+                "source": "https://github.com/twbs/bootstrap/tree/v5.2.1"
+            },
+            "time": "2022-09-07T15:31:39+00:00"
         },
         {
             "name": "twig/twig",
