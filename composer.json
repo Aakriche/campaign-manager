@@ -27,6 +27,7 @@
         "drupal/field_group": "^3.2",
         "drupal/field_permissions": "^1.2",
         "drupal/menu_item_role_access": "^2.0",
+        "drupal/menu_token": "^9.1@alpha",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
         "drupal/rabbit_hole": "^1.0@beta",
