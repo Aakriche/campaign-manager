@@ -20,3 +20,12 @@ function campaign_css_alter(&$css, AttachedAssetsInterface $assets) {
     }
   }
 }
+
+function campaign_preprocess_paragraph($variables){
+
+ if (isset($variables['content']['filed_lien'])) {
+   $url = $variables['paragraph']->get('field_lien')->first()->getUrl();
+   $variables['my_url'] = $url;
+ }
+}
+
