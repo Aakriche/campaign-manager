@@ -21,11 +21,21 @@ function campaign_css_alter(&$css, AttachedAssetsInterface $assets) {
   }
 }
 
-function campaign_preprocess_paragraph($variables){
+/*function campaign_preprocess_paragraph($variables){
 
- if (isset($variables['content']['filed_lien'])) {
+ if (isset($variables['content']['field_lien'])) {
    $url = $variables['paragraph']->get('field_lien')->first()->getUrl();
-   $variables['my_url'] = $url;
+   $variables['content']['my_url'] = $url;
  }
+}*/
+
+function campaign_preprocess_field($variables)
+{
+
+  if ($variables['element']['#field_name'] === "field_image_scenario") {
+    unset($variables['attributes']['class']['0']);
+  }
 }
+
+
 
