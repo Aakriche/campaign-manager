@@ -106,18 +106,10 @@
   </header>
   <div{{ content_attributes.addClass('node__content', layout) }}>
     {# Comments not part of content, so they won't inherit .text-content styles. #}
-    {% if node.field_image_scenario is not empty %}
-    {{ content.field_image_scenario }}
+    {% if node.field_image_de_lieu is not empty %}
+    {{ content.field_image_de_lieu }}
     {% endif %}
-    <div class="row">
-      <div class="col">
-    {{ content.field_type_de_scenario }}
-      </div>
-        <div class="col">
-    {{ content.field_univers }}
-        </div>
-    </div>
-    {{ content|without('comment', 'field_image_scenario', 'field_type_de_scenario', 'field_univers') }}
+    {{ content|without('comment', 'field_image_de_lieu') }}
   </div>
   {% if content.comment %}
     <div id="comments" class="{{ layout }}">
