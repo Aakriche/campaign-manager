@@ -35,7 +35,13 @@ function campaign_preprocess_field($variables)
   if ($variables['element']['#field_name'] === "field_image_scenario") {
     unset($variables['attributes']['class']['0']);
   }
+
+//  if ($variables['element']['#bundle'] === "creature") {
+//    $fields = ['field_force', 'field_dexterite', 'field_constitution', 'field_sagesse', 'field_intelligence', 'field_charisme'];
+//    if (in_array($variables['element']['#field_name'], $fields)) {
+//      $variables['attributes']['class']['0'] = "col";
+//      dump($variables);
+//    }
+//  }
+
 }
-
-
-
