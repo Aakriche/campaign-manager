@@ -1,0 +1,19 @@
+uuid: 21992f72-a36a-4b11-8680-15d425ffe13c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_langues
+    - node.type.creature
+id: node.creature.field_langues
+field_name: field_langues
+entity_type: node
+bundle: creature
+label: Langues
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

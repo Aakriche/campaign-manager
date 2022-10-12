@@ -1,0 +1,49 @@
+uuid: 565f48ed-04ee-432e-980e-ba5e679b1fc1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.scenario.field_carte
+    - field.field.node.scenario.field_creature
+    - field.field.node.scenario.field_etapes
+    - field.field.node.scenario.field_events
+    - field.field.node.scenario.field_image_scenario
+    - field.field.node.scenario.field_lieu_de_scenario
+    - field.field.node.scenario.field_organisation
+    - field.field.node.scenario.field_pnj_qui_y_demeurent
+    - field.field.node.scenario.field_public
+    - field.field.node.scenario.field_rencontres
+    - field.field.node.scenario.field_se_situe_dans_
+    - field.field.node.scenario.field_situation_initiale
+    - field.field.node.scenario.field_type_de_scenario
+    - field.field.node.scenario.field_univers
+    - node.type.scenario
+  module:
+    - user
+id: node.scenario.teaser
+targetEntityType: node
+bundle: scenario
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_carte: true
+  field_creature: true
+  field_etapes: true
+  field_events: true
+  field_image_scenario: true
+  field_lieu_de_scenario: true
+  field_organisation: true
+  field_pnj_qui_y_demeurent: true
+  field_public: true
+  field_rencontres: true
+  field_se_situe_dans_: true
+  field_situation_initiale: true
+  field_type_de_scenario: true
+  field_univers: true
+  langcode: true

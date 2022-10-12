@@ -1,0 +1,8 @@
+uuid: 1754aea1-5098-4520-b2d3-e6c52c26bf91
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Type de créature'
+vid: type_de_creature
+description: ''
+weight: 0

@@ -1,0 +1,25 @@
+uuid: 690b6aa9-df20-4344-949e-d4cdd00d1f2a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lieu_de_scenario
+    - node.type.scenario
+id: node.scenario.field_lieu_de_scenario
+field_name: field_lieu_de_scenario
+entity_type: node
+bundle: scenario
+label: Lieu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content_lieu
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

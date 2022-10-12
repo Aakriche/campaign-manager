@@ -1,0 +1,25 @@
+uuid: 7cd0dd17-4b1d-41e5-978b-fce86967a2fe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add
+    - node.type.page
+  module:
+    - block_field
+id: node.page.field_add
+field_name: field_add
+entity_type: node
+bundle: page
+label: add
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'system_menu_block:add-menu': 'system_menu_block:add-menu'
+field_type: block_field

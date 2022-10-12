@@ -1,0 +1,28 @@
+uuid: 883fe435-66fa-4824-b65f-ede3891a6ed3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mon_compte
+    - node.type.page
+  module:
+    - link
+id: node.page.field_mon_compte
+field_name: field_mon_compte
+entity_type: node
+bundle: page
+label: 'Mon compte'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/user/[current-user:uid]/edit'
+    title: 'Editer mes informations'
+    options: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

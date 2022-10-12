@@ -1,0 +1,41 @@
+uuid: 4708ab3f-3d2c-463f-8e00-31f9cb470855
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.region.field_carte
+    - field.field.node.region.field_contient_
+    - field.field.node.region.field_description
+    - field.field.node.region.field_histoire
+    - field.field.node.region.field_image_de_region
+    - field.field.node.region.field_pnj_qui_y_demeurent
+    - field.field.node.region.field_public
+    - field.field.node.region.field_se_situe_dans_
+    - field.field.node.region.field_type_de_region
+    - field.field.node.region.field_univers
+    - node.type.region
+  module:
+    - user
+id: node.region.teaser
+targetEntityType: node
+bundle: region
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_carte: true
+  field_contient_: true
+  field_description: true
+  field_histoire: true
+  field_image_de_region: true
+  field_pnj_qui_y_demeurent: true
+  field_public: true
+  field_se_situe_dans_: true
+  field_type_de_region: true
+  field_univers: true
+  langcode: true

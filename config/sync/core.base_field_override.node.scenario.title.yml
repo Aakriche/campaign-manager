@@ -1,0 +1,18 @@
+uuid: 717403ef-f1f1-49ae-b1e6-9c02df6fa3ce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.scenario
+id: node.scenario.title
+field_name: title
+entity_type: node
+bundle: scenario
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

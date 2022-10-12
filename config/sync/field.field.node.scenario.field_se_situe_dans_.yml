@@ -1,0 +1,25 @@
+uuid: ce32e18c-b1b4-44a9-b9c9-c0af8465e52b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_se_situe_dans_
+    - node.type.scenario
+id: node.scenario.field_se_situe_dans_
+field_name: field_se_situe_dans_
+entity_type: node
+bundle: scenario
+label: Région
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content_region
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

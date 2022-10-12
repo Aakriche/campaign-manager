@@ -1,0 +1,25 @@
+uuid: 5a79d64c-f928-4225-b659-d7d28c7a45b5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etapes
+    - node.type.campagne
+id: node.campagne.field_etapes
+field_name: field_etapes
+entity_type: node
+bundle: campagne
+label: Etapes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content_scenario
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

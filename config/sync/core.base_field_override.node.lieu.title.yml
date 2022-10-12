@@ -1,0 +1,18 @@
+uuid: 14d8b254-70bb-404a-a451-2d346f1094f6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.lieu
+id: node.lieu.title
+field_name: title
+entity_type: node
+bundle: lieu
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

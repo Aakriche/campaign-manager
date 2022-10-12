@@ -1,0 +1,18 @@
+uuid: 22c9049e-a7a8-4e8e-bff6-ae8e3a31b99d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.campagne
+id: node.campagne.title
+field_name: title
+entity_type: node
+bundle: campagne
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: dcba0adf-6f61-4287-b169-7c2661ccbcf5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_creature
+    - node.type.rencontre
+id: node.rencontre.field_creature
+field_name: field_creature
+entity_type: node
+bundle: rencontre
+label: Protagonistes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content_pnj_et_creature
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

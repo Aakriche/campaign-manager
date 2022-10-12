@@ -1,0 +1,6 @@
+uuid: 2f3db389-c406-4947-ae10-5f3af016fa43
+langcode: fr
+status: true
+dependencies: {  }
+id: campagnes
+label: 'Mes campagnes'

@@ -1,0 +1,15 @@
+uuid: 47eefa93-c693-4bfa-9719-da7d41f4c3b1
+langcode: fr
+status: true
+dependencies: {  }
+name: card_contenus
+label: 'card contenus'
+effects:
+  d4f4352e-90f0-4566-a17a-40dd2b40bd50:
+    uuid: d4f4352e-90f0-4566-a17a-40dd2b40bd50
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 612
+      height: 350
+      anchor: center-center

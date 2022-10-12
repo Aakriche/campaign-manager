@@ -1,0 +1,25 @@
+uuid: 97a89bf9-df25-43b6-934e-db2200613534
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etapes
+    - node.type.scenario
+id: node.scenario.field_etapes
+field_name: field_etapes
+entity_type: node
+bundle: scenario
+label: Etapes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content_scenario
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 77909c7a-67e1-4336-b6bd-f56ada33b41d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actions
+    - node.type.creature
+  module:
+    - text
+id: node.creature.field_actions
+field_name: field_actions
+entity_type: node
+bundle: creature
+label: Actions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

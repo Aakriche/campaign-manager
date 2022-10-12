@@ -1,0 +1,19 @@
+uuid: 73a3866d-d745-41e5-928b-09069845ba7e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sensibilites
+    - node.type.creature
+id: node.creature.field_sensibilites
+field_name: field_sensibilites
+entity_type: node
+bundle: creature
+label: Sensibilités
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

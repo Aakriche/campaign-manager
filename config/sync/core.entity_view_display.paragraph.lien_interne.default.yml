@@ -1,0 +1,41 @@
+uuid: 151f6002-42a0-40fc-a6ce-9f03667972ae
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.lien_interne.field_image
+    - field.field.paragraph.lien_interne.field_lien
+    - image.style.card_contenus
+    - paragraphs.paragraphs_type.lien_interne
+  module:
+    - image
+    - link
+id: paragraph.lien_interne.default
+targetEntityType: paragraph
+bundle: lien_interne
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: card_contenus
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_lien:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

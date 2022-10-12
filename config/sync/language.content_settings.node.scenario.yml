@@ -1,0 +1,11 @@
+uuid: a342e573-7ade-4347-990e-6c1cb3ea087b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.scenario
+id: node.scenario
+target_entity_type_id: node
+target_bundle: scenario
+default_langcode: site_default
+language_alterable: false

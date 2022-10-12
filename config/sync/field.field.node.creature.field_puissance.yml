@@ -1,0 +1,29 @@
+uuid: ad441416-9bd2-4191-883a-34b2cf101447
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_puissance
+    - node.type.creature
+    - taxonomy.vocabulary.puissance
+id: node.creature.field_puissance
+field_name: field_puissance
+entity_type: node
+bundle: creature
+label: Puissance
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      puissance: puissance
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

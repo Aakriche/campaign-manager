@@ -1,0 +1,76 @@
+uuid: 60cdb121-0ed1-4312-af0e-ee5cc518f293
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.rencontre.field_creature
+    - field.field.node.rencontre.field_description
+    - field.field.node.rencontre.field_lieu
+    - field.field.node.rencontre.field_niveau
+    - field.field.node.rencontre.field_public
+    - node.type.rencontre
+  module:
+    - field_group
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_protagonistes:
+      children:
+        - field_creature
+      label: Protagonistes
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+id: node.rencontre.default
+targetEntityType: node
+bundle: rencontre
+mode: default
+content:
+  field_creature:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_lieu:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_niveau:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_public: true
+  langcode: true

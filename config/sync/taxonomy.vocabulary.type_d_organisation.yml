@@ -1,0 +1,8 @@
+uuid: 2ae80271-df43-4a06-b352-936c990dd601
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Type d''organisation'
+vid: type_d_organisation
+description: ''
+weight: 0

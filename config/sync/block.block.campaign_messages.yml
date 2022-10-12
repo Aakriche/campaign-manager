@@ -1,0 +1,22 @@
+uuid: 802bd1eb-1773-4db4-834a-da418d07d8c2
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - campaign
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: campaign_messages
+theme: campaign
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

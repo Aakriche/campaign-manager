@@ -1,0 +1,38 @@
+uuid: 9a21d467-15fb-4d3d-998e-5d9c1f7ad303
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_d_illustration
+    - node.type.creature
+  module:
+    - image
+id: node.creature.field_image_d_illustration
+field_name: field_image_d_illustration
+entity_type: node
+bundle: creature
+label: 'Image d''illustration'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 36a6400c-3e90-47a9-a31c-796897a96242
+    alt: créature
+    title: ''
+    width: 924
+    height: 720
+field_type: image

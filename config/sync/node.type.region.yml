@@ -1,0 +1,18 @@
+uuid: b88ae79c-835a-41a4-8524-3fc8bb6c9f2a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Région
+type: region
+description: 'Créer une région, un royaume, un continent, une planète,  un plan, une métropole. Vous pourrez y associer des PNJ qui y vivent, des lieux ou bien d''autres régions.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

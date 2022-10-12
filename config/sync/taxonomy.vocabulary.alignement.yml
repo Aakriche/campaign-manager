@@ -1,0 +1,8 @@
+uuid: 400d9493-ac82-4a2c-8f80-cf1ea4ee455c
+langcode: fr
+status: true
+dependencies: {  }
+name: Alignement
+vid: alignement
+description: ''
+weight: 0

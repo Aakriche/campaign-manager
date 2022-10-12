@@ -1,0 +1,35 @@
+uuid: 91190f03-fde2-4767-9eca-1bbcebfe6e02
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lieu.field_carte
+    - field.field.node.lieu.field_description
+    - field.field.node.lieu.field_histoire
+    - field.field.node.lieu.field_image_de_lieu
+    - field.field.node.lieu.field_public
+    - field.field.node.lieu.field_se_situe_dans_
+    - field.field.node.lieu.field_type_de_lieu
+    - node.type.lieu
+  module:
+    - user
+id: node.lieu.teaser
+targetEntityType: node
+bundle: lieu
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_carte: true
+  field_description: true
+  field_histoire: true
+  field_image_de_lieu: true
+  field_public: true
+  field_se_situe_dans_: true
+  field_type_de_lieu: true
+  langcode: true

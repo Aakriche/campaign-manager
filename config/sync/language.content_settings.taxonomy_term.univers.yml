@@ -1,0 +1,11 @@
+uuid: 1e8b9d6f-e587-47b6-9bae-d034a339f329
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.univers
+id: taxonomy_term.univers
+target_entity_type_id: taxonomy_term
+target_bundle: univers
+default_langcode: site_default
+language_alterable: false

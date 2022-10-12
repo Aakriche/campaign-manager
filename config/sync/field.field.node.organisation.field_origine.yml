@@ -1,0 +1,33 @@
+uuid: 44c86d53-ea82-417e-a9eb-b12f7de0f7d0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_origine
+    - node.type.organisation
+    - taxonomy.vocabulary.origine
+  content:
+    - 'taxonomy_term:origine:994ac1c7-4065-4e92-aaa2-b732f3e74def'
+id: node.organisation.field_origine
+field_name: field_origine
+entity_type: node
+bundle: organisation
+label: Origine
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 994ac1c7-4065-4e92-aaa2-b732f3e74def
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      origine: origine
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

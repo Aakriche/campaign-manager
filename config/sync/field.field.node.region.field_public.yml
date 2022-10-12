@@ -1,0 +1,23 @@
+uuid: ece21e8b-8f42-4188-aca4-fba8131c9913
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public
+    - node.type.region
+id: node.region.field_public
+field_name: field_public
+entity_type: node
+bundle: region
+label: Public
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

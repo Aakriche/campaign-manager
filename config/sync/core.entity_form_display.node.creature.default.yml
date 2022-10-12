@@ -1,0 +1,421 @@
+uuid: a0a9b169-6567-4226-8e26-256d65d8afc8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.creature.field_actions
+    - field.field.node.creature.field_actions_legendaires
+    - field.field.node.creature.field_alignement
+    - field.field.node.creature.field_ca
+    - field.field.node.creature.field_capacites_et_sorts
+    - field.field.node.creature.field_charisme
+    - field.field.node.creature.field_constitution
+    - field.field.node.creature.field_descriptioncreature
+    - field.field.node.creature.field_dexterite
+    - field.field.node.creature.field_force
+    - field.field.node.creature.field_image_d_illustration
+    - field.field.node.creature.field_intelligence
+    - field.field.node.creature.field_invulnerabilites
+    - field.field.node.creature.field_jets_de_sauvegarde
+    - field.field.node.creature.field_langues
+    - field.field.node.creature.field_origine
+    - field.field.node.creature.field_public
+    - field.field.node.creature.field_puissance
+    - field.field.node.creature.field_pv
+    - field.field.node.creature.field_resistances
+    - field.field.node.creature.field_sagesse
+    - field.field.node.creature.field_sens
+    - field.field.node.creature.field_sensibilites
+    - field.field.node.creature.field_typecreature
+    - field.field.node.creature.field_vitesse
+    - image.style.thumbnail
+    - node.type.creature
+  module:
+    - field_group
+    - image
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_apercu
+        - group_apparence
+        - group_caracteristiques
+        - group_autres_modificateurs
+        - group_capacites_et_sorts
+        - group_actions_et_actions_legenda
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_apercu:
+      children:
+        - title
+        - field_typecreature
+        - field_alignement
+        - field_puissance
+        - field_descriptioncreature
+        - field_image_d_illustration
+      label: Aperçu
+      region: content
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: 'Informations générales sur la créature'
+        required_fields: true
+    group_apparence:
+      children:
+        - field_ca
+        - field_pv
+        - field_vitesse
+      label: 'Defense et Vitesse'
+      region: content
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_caracteristiques:
+      children:
+        - field_force
+        - field_dexterite
+        - field_constitution
+        - field_intelligence
+        - field_sagesse
+        - field_charisme
+      label: Caractéristiques
+      region: content
+      parent_name: group_tabs
+      weight: 22
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_autres_modificateurs:
+      children:
+        - field_jets_de_sauvegarde
+        - field_resistances
+        - field_invulnerabilites
+        - field_sensibilites
+        - field_langues
+        - field_sens
+      label: 'Autres modificateurs'
+      region: content
+      parent_name: group_tabs
+      weight: 23
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_capacites_et_sorts:
+      children:
+        - field_capacites_et_sorts
+      label: 'Capacités et sorts'
+      region: content
+      parent_name: group_tabs
+      weight: 24
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_actions_et_actions_legenda:
+      children:
+        - field_actions
+        - field_actions_legendaires
+      label: 'Actions et Actions Légendaires'
+      region: content
+      parent_name: group_tabs
+      weight: 25
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: node.creature.default
+targetEntityType: node
+bundle: creature
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_actions:
+    type: text_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_actions_legendaires:
+    type: text_textarea
+    weight: 11
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_alignement:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ca:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: '12 (15 avec armure de mage)'
+    third_party_settings: {  }
+  field_capacites_et_sorts:
+    type: text_textarea
+    weight: 9
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_charisme:
+    type: string_textfield
+    weight: 20
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_constitution:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_descriptioncreature:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_dexterite:
+    type: string_textfield
+    weight: 16
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_force:
+    type: string_textfield
+    weight: 15
+    region: content
+    settings:
+      size: 60
+      placeholder: '14 (+2)'
+    third_party_settings: {  }
+  field_image_d_illustration:
+    type: image_image
+    weight: 6
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_intelligence:
+    type: string_textfield
+    weight: 18
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_invulnerabilites:
+    type: string_textfield
+    weight: 23
+    region: content
+    settings:
+      size: 40
+      placeholder: Poison
+    third_party_settings: {  }
+  field_jets_de_sauvegarde:
+    type: string_textfield
+    weight: 21
+    region: content
+    settings:
+      size: 40
+      placeholder: 'Sagesse +4'
+    third_party_settings: {  }
+  field_langues:
+    type: string_textfield
+    weight: 25
+    region: content
+    settings:
+      size: 40
+      placeholder: 'Commun, elfe'
+    third_party_settings: {  }
+  field_origine:
+    type: options_buttons
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_public:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_puissance:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pv:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: '68 (12D8 + 8)'
+    third_party_settings: {  }
+  field_resistances:
+    type: string_textfield
+    weight: 22
+    region: content
+    settings:
+      size: 40
+      placeholder: 'Tranchants non magiques, feu'
+    third_party_settings: {  }
+  field_sagesse:
+    type: string_textfield
+    weight: 19
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sens:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sensibilites:
+    type: string_textfield
+    weight: 24
+    region: content
+    settings:
+      size: 40
+      placeholder: Contondant
+    third_party_settings: {  }
+  field_typecreature:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_vitesse:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: '9m (12m nage, 18m vol)'
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

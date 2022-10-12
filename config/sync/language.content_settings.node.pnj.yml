@@ -1,0 +1,11 @@
+uuid: a53e45fe-bcfc-4d73-b7b5-fdb7403e06e0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.pnj
+id: node.pnj
+target_entity_type_id: node
+target_bundle: pnj
+default_langcode: site_default
+language_alterable: false

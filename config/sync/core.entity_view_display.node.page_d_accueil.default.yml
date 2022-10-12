@@ -1,0 +1,38 @@
+uuid: 07cc1562-c4d9-46d6-abab-4db91806877c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.page_d_accueil.body
+    - field.field.node.page_d_accueil.field_last_3
+    - node.type.page_d_accueil
+  module:
+    - block_field
+    - text
+    - user
+id: node.page_d_accueil.default
+targetEntityType: node
+bundle: page_d_accueil
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_last_3:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

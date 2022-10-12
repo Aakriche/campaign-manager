@@ -1,0 +1,11 @@
+uuid: 296553e2-91b0-4518-a476-74bcfcfaadb1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.creature
+id: node.creature
+target_entity_type_id: node
+target_bundle: creature
+default_langcode: site_default
+language_alterable: false

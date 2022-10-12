@@ -1,0 +1,14 @@
+uuid: 63c5d629-71f7-4680-aad1-8fa19e25a8c1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.region
+id: node_type_region
+entity_type_id: node_type
+entity_id: region
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

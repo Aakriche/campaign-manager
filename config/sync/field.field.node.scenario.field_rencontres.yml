@@ -1,0 +1,25 @@
+uuid: 376c3547-b9cf-4fd0-b939-0a885d1ac820
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rencontres
+    - node.type.scenario
+id: node.scenario.field_rencontres
+field_name: field_rencontres
+entity_type: node
+bundle: scenario
+label: Rencontres
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content_rencontre
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,33 @@
+uuid: 28e0d778-784d-4c48-b553-c287bbe91d9b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page_de_liste.body
+    - field.field.node.page_de_liste.field_view_de_liste
+    - node.type.page_de_liste
+  module:
+    - text
+    - user
+id: node.page_de_liste.teaser
+targetEntityType: node
+bundle: page_de_liste
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_view_de_liste: true
+  langcode: true

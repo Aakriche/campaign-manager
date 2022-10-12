@@ -1,0 +1,21 @@
+uuid: 60e223b7-ceb6-44d1-a38d-b78639d6037e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_historique
+    - node.type.pnj
+  module:
+    - text
+id: node.pnj.field_historique
+field_name: field_historique
+entity_type: node
+bundle: pnj
+label: Historique
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,18 @@
+uuid: a6e95d81-6cf6-4713-9ae5-bdea3a0ddd45
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.rencontre
+id: node.rencontre.title
+field_name: title
+entity_type: node
+bundle: rencontre
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,31 @@
+uuid: f66152c2-2276-46c2-8b12-903f3a5aab8e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.rencontre.field_creature
+    - field.field.node.rencontre.field_description
+    - field.field.node.rencontre.field_lieu
+    - field.field.node.rencontre.field_niveau
+    - field.field.node.rencontre.field_public
+    - node.type.rencontre
+  module:
+    - user
+id: node.rencontre.teaser
+targetEntityType: node
+bundle: rencontre
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_creature: true
+  field_description: true
+  field_lieu: true
+  field_niveau: true
+  field_public: true
+  langcode: true

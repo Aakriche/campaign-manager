@@ -1,0 +1,23 @@
+uuid: 8fcde7aa-baf5-457b-899b-c917c526762f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public
+    - node.type.pnj
+id: node.pnj.field_public
+field_name: field_public
+entity_type: node
+bundle: pnj
+label: Public
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

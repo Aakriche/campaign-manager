@@ -1,0 +1,11 @@
+uuid: a5a50d9d-01ee-4405-8d49-4740530a4785
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.rencontre
+id: node.rencontre
+target_entity_type_id: node
+target_bundle: rencontre
+default_langcode: site_default
+language_alterable: false

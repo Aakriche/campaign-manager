@@ -1,0 +1,32 @@
+uuid: 89dc742c-e2cd-43ef-b226-b439029497b4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: title_url
+label: 'title url'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  59679064-944a-4039-9efe-43475e00e87e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 59679064-944a-4039-9efe-43475e00e87e
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      campagne: campagne
+      creature: creature
+      lieu: lieu
+      organisation: organisation
+      page: page
+      page_de_liste: page_de_liste
+      pnj: pnj
+      region: region
+      rencontre: rencontre
+      scenario: scenario
+selection_logic: and
+weight: -5
+relationships: {  }

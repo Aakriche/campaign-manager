@@ -1,0 +1,19 @@
+uuid: 0067d14e-ca83-4d36-b517-020ca9c83fa8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_histoire
+field_name: field_histoire
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

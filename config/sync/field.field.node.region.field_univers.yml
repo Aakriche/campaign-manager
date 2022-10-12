@@ -1,0 +1,29 @@
+uuid: 6f35ce22-8184-4ba8-a7dd-f5aa9e3eb8d4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_univers
+    - node.type.region
+    - taxonomy.vocabulary.univers
+id: node.region.field_univers
+field_name: field_univers
+entity_type: node
+bundle: region
+label: Univers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      univers: univers
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

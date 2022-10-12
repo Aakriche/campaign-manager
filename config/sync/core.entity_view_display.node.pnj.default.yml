@@ -1,0 +1,138 @@
+uuid: b613cbc9-f74e-4536-9da4-6c8cb36907f8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.pnj.field_historique
+    - field.field.node.pnj.field_image_de_pnj
+    - field.field.node.pnj.field_objectifspnj
+    - field.field.node.pnj.field_organisation
+    - field.field.node.pnj.field_origine
+    - field.field.node.pnj.field_public
+    - field.field.node.pnj.field_statistiques
+    - field.field.node.pnj.field_univers
+    - image.style.large
+    - node.type.pnj
+  module:
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_histoire:
+      children:
+        - field_organisation
+        - field_historique
+      label: Historique
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+    group_objectifs:
+      children:
+        - field_objectifspnj
+      label: Objectifs
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+    group_statistiques:
+      children:
+        - field_statistiques
+      label: Statistiques
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+id: node.pnj.default
+targetEntityType: node
+bundle: pnj
+mode: default
+content:
+  field_historique:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_image_de_pnj:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_objectifspnj:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_organisation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_origine:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_statistiques:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_univers:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_public: true
+  langcode: true

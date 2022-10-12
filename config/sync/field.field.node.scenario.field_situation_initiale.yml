@@ -1,0 +1,21 @@
+uuid: 9fb993ba-6dd1-4af7-a8c6-f696f90dab6e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_situation_initiale
+    - node.type.scenario
+  module:
+    - text
+id: node.scenario.field_situation_initiale
+field_name: field_situation_initiale
+entity_type: node
+bundle: scenario
+label: 'Situation Initiale'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

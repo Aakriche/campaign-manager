@@ -1,0 +1,33 @@
+uuid: f56bec60-39ee-4bce-a597-36398984e057
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page_d_accueil.body
+    - field.field.node.page_d_accueil.field_last_3
+    - node.type.page_d_accueil
+  module:
+    - text
+    - user
+id: node.page_d_accueil.teaser
+targetEntityType: node
+bundle: page_d_accueil
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_last_3: true
+  langcode: true

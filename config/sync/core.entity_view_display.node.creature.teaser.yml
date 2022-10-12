@@ -1,0 +1,71 @@
+uuid: c3b36ccd-0454-4edb-a489-5012922c2f10
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.creature.field_actions
+    - field.field.node.creature.field_actions_legendaires
+    - field.field.node.creature.field_alignement
+    - field.field.node.creature.field_ca
+    - field.field.node.creature.field_capacites_et_sorts
+    - field.field.node.creature.field_charisme
+    - field.field.node.creature.field_constitution
+    - field.field.node.creature.field_descriptioncreature
+    - field.field.node.creature.field_dexterite
+    - field.field.node.creature.field_force
+    - field.field.node.creature.field_image_d_illustration
+    - field.field.node.creature.field_intelligence
+    - field.field.node.creature.field_invulnerabilites
+    - field.field.node.creature.field_jets_de_sauvegarde
+    - field.field.node.creature.field_langues
+    - field.field.node.creature.field_origine
+    - field.field.node.creature.field_public
+    - field.field.node.creature.field_puissance
+    - field.field.node.creature.field_pv
+    - field.field.node.creature.field_resistances
+    - field.field.node.creature.field_sagesse
+    - field.field.node.creature.field_sens
+    - field.field.node.creature.field_sensibilites
+    - field.field.node.creature.field_typecreature
+    - field.field.node.creature.field_vitesse
+    - node.type.creature
+  module:
+    - user
+id: node.creature.teaser
+targetEntityType: node
+bundle: creature
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_actions: true
+  field_actions_legendaires: true
+  field_alignement: true
+  field_ca: true
+  field_capacites_et_sorts: true
+  field_charisme: true
+  field_constitution: true
+  field_descriptioncreature: true
+  field_dexterite: true
+  field_force: true
+  field_image_d_illustration: true
+  field_intelligence: true
+  field_invulnerabilites: true
+  field_jets_de_sauvegarde: true
+  field_langues: true
+  field_origine: true
+  field_public: true
+  field_puissance: true
+  field_pv: true
+  field_resistances: true
+  field_sagesse: true
+  field_sens: true
+  field_sensibilites: true
+  field_typecreature: true
+  field_vitesse: true
+  langcode: true

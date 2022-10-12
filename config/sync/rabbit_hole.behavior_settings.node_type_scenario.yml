@@ -1,0 +1,14 @@
+uuid: 8fd31786-189d-4852-a20f-0410aff53c79
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.scenario
+id: node_type_scenario
+entity_type_id: node_type
+entity_id: scenario
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

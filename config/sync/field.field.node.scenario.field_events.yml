@@ -1,0 +1,21 @@
+uuid: 678029c7-a452-4ec7-91d9-3509a2757bbc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events
+    - node.type.scenario
+  module:
+    - text
+id: node.scenario.field_events
+field_name: field_events
+entity_type: node
+bundle: scenario
+label: 'Evènements possibles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

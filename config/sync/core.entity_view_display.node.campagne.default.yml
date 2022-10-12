@@ -1,0 +1,63 @@
+uuid: 8a935d6a-ee71-4b81-b714-4c788b6a5c2e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.campagne.field_etapes
+    - field.field.node.campagne.field_image_d_illustration
+    - field.field.node.campagne.field_public
+    - field.field.node.campagne.field_resume
+    - field.field.node.campagne.field_univers
+    - image.style.large
+    - node.type.campagne
+  module:
+    - image
+    - text
+    - user
+id: node.campagne.default
+targetEntityType: node
+bundle: campagne
+mode: default
+content:
+  field_etapes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image_d_illustration:
+    type: image
+    label: hidden
+    settings:
+      image_link: file
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_resume:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_univers:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_public: true
+  langcode: true

@@ -1,0 +1,19 @@
+uuid: d8f1e57f-6f5e-47db-b441-88207f09252d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dexterite
+    - node.type.creature
+id: node.creature.field_dexterite
+field_name: field_dexterite
+entity_type: node
+bundle: creature
+label: Dextérité
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

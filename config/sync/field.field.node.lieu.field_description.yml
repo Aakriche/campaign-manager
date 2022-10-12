@@ -1,0 +1,21 @@
+uuid: f40b7296-e058-40a3-8450-60494a8041fe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.lieu
+  module:
+    - text
+id: node.lieu.field_description
+field_name: field_description
+entity_type: node
+bundle: lieu
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

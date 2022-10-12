@@ -1,0 +1,10 @@
+uuid: ea5b12ec-4a72-4e9b-b5d8-820bd241669b
+langcode: fr
+status: true
+dependencies: {  }
+id: block_vue
+label: 'Block Vue'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,18 @@
+uuid: 8f24eae9-00ee-4f85-aabc-81288541dc2c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.pnj
+id: node.pnj.title
+field_name: title
+entity_type: node
+bundle: pnj
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

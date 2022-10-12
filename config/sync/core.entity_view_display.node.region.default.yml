@@ -1,0 +1,188 @@
+uuid: 74ad7ac4-5dd2-4708-8f67-26be21abaa98
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.region.field_carte
+    - field.field.node.region.field_contient_
+    - field.field.node.region.field_description
+    - field.field.node.region.field_histoire
+    - field.field.node.region.field_image_de_region
+    - field.field.node.region.field_pnj_qui_y_demeurent
+    - field.field.node.region.field_public
+    - field.field.node.region.field_se_situe_dans_
+    - field.field.node.region.field_type_de_region
+    - field.field.node.region.field_univers
+    - image.style.large
+    - node.type.region
+  module:
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_geographie:
+      children:
+        - field_se_situe_dans_
+        - field_contient_
+      label: Géographie
+      parent_name: ''
+      region: content
+      weight: 7
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+    group_histoire:
+      children:
+        - field_histoire
+      label: Histoire
+      parent_name: ''
+      region: content
+      weight: 6
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+    group_habitants_notables:
+      children:
+        - field_pnj_qui_y_demeurent
+      label: 'Habitants notables'
+      parent_name: ''
+      region: content
+      weight: 8
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+    group_cartes:
+      children:
+        - field_carte
+      label: Cartes
+      parent_name: ''
+      region: content
+      weight: 9
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+    group_illustrations:
+      children: {  }
+      label: Illustrations
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+id: node.region.default
+targetEntityType: node
+bundle: region
+mode: default
+content:
+  field_carte:
+    type: image
+    label: hidden
+    settings:
+      image_link: file
+      image_style: cartes_dans_contenu
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_contient_:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_histoire:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_image_de_region:
+    type: image
+    label: hidden
+    settings:
+      image_link: file
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pnj_qui_y_demeurent:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_se_situe_dans_:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_type_de_region:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_univers:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_public: true
+  langcode: true

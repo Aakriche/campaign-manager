@@ -1,0 +1,29 @@
+uuid: 9d57e837-7292-4b6c-a7c4-2bd4c34e1018
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alignement
+    - node.type.creature
+    - taxonomy.vocabulary.alignement
+id: node.creature.field_alignement
+field_name: field_alignement
+entity_type: node
+bundle: creature
+label: Alignement
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      alignement: alignement
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

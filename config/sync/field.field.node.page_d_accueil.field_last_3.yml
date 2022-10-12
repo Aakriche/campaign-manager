@@ -1,0 +1,23 @@
+uuid: c2924257-244e-4d90-9357-e631253b374e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_3
+    - node.type.page_d_accueil
+  module:
+    - block_field
+id: node.page_d_accueil.field_last_3
+field_name: field_last_3
+entity_type: node
+bundle: page_d_accueil
+label: 'last 3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings: {  }
+field_type: block_field

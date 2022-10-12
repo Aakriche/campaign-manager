@@ -1,0 +1,21 @@
+uuid: a8ff70c9-717a-43e1-940f-59067d667e06
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resume
+    - node.type.campagne
+  module:
+    - text
+id: node.campagne.field_resume
+field_name: field_resume
+entity_type: node
+bundle: campagne
+label: Résumé
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: fdabdaec-ee47-4bf8-a02d-4159a6b9e138
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intelligence
+    - node.type.creature
+id: node.creature.field_intelligence
+field_name: field_intelligence
+entity_type: node
+bundle: creature
+label: Intelligence
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

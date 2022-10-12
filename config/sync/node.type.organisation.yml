@@ -1,0 +1,18 @@
+uuid: ebd6a2dd-9796-42ce-be44-e2c8a8c52eb4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Organisation
+type: organisation
+description: 'Créer un groupe, communauté politique ou religieuse, clan, guilde auquel vous pourrez ajouter des PNJ ou une localisation.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

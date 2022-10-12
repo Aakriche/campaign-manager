@@ -1,0 +1,29 @@
+uuid: efa7468b-22cd-4be9-9528-702dc6318e82
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_univers
+    - node.type.campagne
+    - taxonomy.vocabulary.univers
+id: node.campagne.field_univers
+field_name: field_univers
+entity_type: node
+bundle: campagne
+label: Univers
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      univers: univers
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 26f4f3ee-2dc6-4b43-b1ef-70b3dcfa6dd0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.page_d_accueil
+  module:
+    - text
+id: node.page_d_accueil.body
+field_name: body
+entity_type: node
+bundle: page_d_accueil
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
