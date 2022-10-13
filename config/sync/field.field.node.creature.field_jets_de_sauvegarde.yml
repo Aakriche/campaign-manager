@@ -9,7 +9,7 @@ id: node.creature.field_jets_de_sauvegarde
 field_name: field_jets_de_sauvegarde
 entity_type: node
 bundle: creature
-label: 'Jets de Sauvegarde'
+label: 'Jets de sauvegarde et de compétence'
 description: ''
 required: false
 translatable: false

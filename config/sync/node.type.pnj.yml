@@ -13,6 +13,6 @@ name: PNJ
 type: pnj
 description: 'Créer un personnage non-joueur comme un allié, un ennemi, un marchand, une divinité, le chef d''un clan etc.. Vous pourrez lui attribuer un profil de créature.'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
 display_submitted: false
