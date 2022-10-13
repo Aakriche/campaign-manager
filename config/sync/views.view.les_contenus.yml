@@ -279,7 +279,7 @@ display:
               secondary_open: false
               reset_button_always_show: false
             filter:
-              field_puissance_target_id:
+              field_type_de_lieu_target_id:
                 plugin_id: default
                 advanced:
                   sort_options: false
@@ -287,23 +287,7 @@ display:
                     filter_rewrite_values: ''
                   collapsible: false
                   is_secondary: false
-              field_typecreature_target_id:
-                plugin_id: default
-                advanced:
-                  sort_options: false
-                  rewrite:
-                    filter_rewrite_values: ''
-                  collapsible: false
-                  is_secondary: false
-              field_alignement_target_id:
-                plugin_id: default
-                advanced:
-                  sort_options: false
-                  rewrite:
-                    filter_rewrite_values: ''
-                  collapsible: false
-                  is_secondary: false
-              field_origine_target_id:
+              field_univers_target_id:
                 plugin_id: default
                 advanced:
                   sort_options: false
@@ -1065,7 +1049,7 @@ display:
             identifier: field_alignement_target_id
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -1113,7 +1097,7 @@ display:
             identifier: field_origine_target_id
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -1703,7 +1687,7 @@ display:
             identifier: field_univers_target_id
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -1751,7 +1735,7 @@ display:
             identifier: field_origine_target_id
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -2241,7 +2225,7 @@ display:
             identifier: field_type_d_organisation_target_id
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -2289,7 +2273,7 @@ display:
             identifier: field_univers_target_id
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -2337,7 +2321,7 @@ display:
             identifier: field_origine_target_id
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -3259,7 +3243,7 @@ display:
             identifier: field_type_de_region_target_id
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -3307,7 +3291,7 @@ display:
             identifier: field_univers_target_id
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -3768,7 +3752,7 @@ display:
             identifier: field_univers_target_id
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -4229,7 +4213,7 @@ display:
             identifier: field_univers_target_id
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -4579,7 +4563,7 @@ display:
             identifier: field_univers_target_id
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'

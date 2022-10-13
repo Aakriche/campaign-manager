@@ -37,14 +37,8 @@ function user_dash_preprocess_node($variables){
   }
 //only in these nodes
   if(isset($variables['$content_type_name'])) {
-    if ($variables['$content_type_name'] === 'rencontre' |
-      $variables['$content_type_name'] === 'lieu' |
-      $variables['$content_type_name'] === 'creature' |
-      $variables['$content_type_name'] === 'campagne' |
-      $variables['$content_type_name'] === 'organisation' |
-      $variables['$content_type_name'] === 'pnj' |
-      $variables['$content_type_name'] === 'region' |
-      $variables['$content_type_name'] === 'scenario') {
+    $nodes = ['rencontre', 'lieu', 'creature', 'campagne', 'organisation', 'pnj', 'region', 'scenario'];
+    if(in_array($variables['$content_type_name'], $nodes)) {
       ///get field_public value
       if (!is_null($node)) {
         $publicvalue = $node->get('field_public')->getValue();
