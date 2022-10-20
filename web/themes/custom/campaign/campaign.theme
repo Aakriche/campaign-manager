@@ -34,7 +34,7 @@ $fieldsname = ["field_image_de_lieu", "field_image_d_organisation", "field_image
 function campaign_preprocess_form_element(&$variables, $form){
   if(array_key_exists("#multiple",$variables['element']) ){
     if(isset($variables['element']['#multiple'])){
-      $variables['attributes']['class'][0] = 'me-4';
+      $variables['attributes']['class'][0] = 'm-2';
       $variables['attributes']['class'][1] = 'mt-2';
       $variables['attributes']['class'][1] = 'pt-1';
     }

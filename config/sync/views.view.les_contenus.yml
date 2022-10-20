@@ -38,6 +38,7 @@ dependencies:
     - node
     - taxonomy
     - user
+    - views_autocomplete_filters
 id: les_contenus
 label: 'Les contenus'
 module: views
@@ -837,6 +838,57 @@ display:
           separator: ', '
           field_api_classes: false
       filters:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: views_autocomplete_filters_string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Nom
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            placeholder: ''
+            autocomplete_filter: 1
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: title
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
         status:
           id: status
           table: node_field_data
@@ -930,102 +982,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        field_puissance_target_id:
-          id: field_puissance_target_id
-          table: node__field_puissance
-          field: field_puissance_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_puissance_target_id_op
-            label: Puissance
-            description: ''
-            use_operator: false
-            operator: field_puissance_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_puissance_target_id
-            required: false
-            remember: false
-            multiple: true
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              content_editor: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: true
-          vid: puissance
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
-        field_typecreature_target_id:
-          id: field_typecreature_target_id
-          table: node__field_typecreature
-          field: field_typecreature_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_typecreature_target_id_op
-            label: Type
-            description: ''
-            use_operator: false
-            operator: field_typecreature_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_typecreature_target_id
-            required: false
-            remember: false
-            multiple: true
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              content_editor: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: true
-          vid: type_de_creature
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
         field_alignement_target_id:
           id: field_alignement_target_id
           table: node__field_alignement
@@ -1118,6 +1074,102 @@ display:
             group_items: {  }
           reduce_duplicates: true
           vid: origine
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_typecreature_target_id:
+          id: field_typecreature_target_id
+          table: node__field_typecreature
+          field: field_typecreature_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_typecreature_target_id_op
+            label: Type
+            description: ''
+            use_operator: false
+            operator: field_typecreature_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_typecreature_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: type_de_creature
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_puissance_target_id:
+          id: field_puissance_target_id
+          table: node__field_puissance
+          field: field_puissance_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_puissance_target_id_op
+            label: Puissance
+            description: ''
+            use_operator: false
+            operator: field_puissance_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_puissance_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: puissance
           type: select
           hierarchy: false
           limit: true
@@ -1616,36 +1668,45 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        field_puissance_target_id:
-          id: field_puissance_target_id
-          table: node__field_puissance
-          field: field_puissance_target_id
-          relationship: field_statistiques
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: views_autocomplete_filters_string
+          operator: contains
+          value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: field_puissance_target_id_op
-            label: Puissance
+            operator_id: title_op
+            label: Nom
             description: ''
             use_operator: false
-            operator: field_puissance_target_id_op
+            operator: title_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_puissance_target_id
+            identifier: title
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
               content_editor: '0'
               administrator: '0'
-            reduce: false
+            placeholder: ''
+            autocomplete_filter: 1
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: title
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
           is_grouped: false
           group_info:
             label: ''
@@ -1658,12 +1719,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: true
-          vid: puissance
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
         field_univers_target_id:
           id: field_univers_target_id
           table: node__field_univers
@@ -1756,6 +1811,54 @@ display:
             group_items: {  }
           reduce_duplicates: true
           vid: origine
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_puissance_target_id:
+          id: field_puissance_target_id
+          table: node__field_puissance
+          field: field_puissance_target_id
+          relationship: field_statistiques
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_puissance_target_id_op
+            label: Puissance
+            description: ''
+            use_operator: false
+            operator: field_puissance_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_puissance_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: puissance
           type: select
           hierarchy: false
           limit: true
@@ -2202,27 +2305,29 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        field_type_d_organisation_target_id:
-          id: field_type_d_organisation_target_id
-          table: node__field_type_d_organisation
-          field: field_type_d_organisation_target_id
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: views_autocomplete_filters_string
+          operator: contains
+          value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: field_type_d_organisation_target_id_op
-            label: Type
+            operator_id: title_op
+            label: Nom
             description: ''
             use_operator: false
-            operator: field_type_d_organisation_target_id_op
+            operator: title_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_type_d_organisation_target_id
+            identifier: title
             required: false
             remember: false
             multiple: false
@@ -2231,7 +2336,14 @@ display:
               anonymous: '0'
               content_editor: '0'
               administrator: '0'
-            reduce: false
+            placeholder: ''
+            autocomplete_filter: 1
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: title
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
           is_grouped: false
           group_info:
             label: ''
@@ -2244,12 +2356,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: true
-          vid: type_d_organisation
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
         field_univers_target_id:
           id: field_univers_target_id
           table: node__field_univers
@@ -2342,6 +2448,54 @@ display:
             group_items: {  }
           reduce_duplicates: true
           vid: origine
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_type_d_organisation_target_id:
+          id: field_type_d_organisation_target_id
+          table: node__field_type_d_organisation
+          field: field_type_d_organisation_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_type_d_organisation_target_id_op
+            label: Type
+            description: ''
+            use_operator: false
+            operator: field_type_d_organisation_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_type_d_organisation_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: type_d_organisation
           type: select
           hierarchy: false
           limit: true
@@ -2717,6 +2871,57 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: views_autocomplete_filters_string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Nom
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            placeholder: ''
+            autocomplete_filter: 1
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: title
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
           is_grouped: false
           group_info:
             label: ''
@@ -3220,6 +3425,57 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: views_autocomplete_filters_string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Nom
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            placeholder: ''
+            autocomplete_filter: 1
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: title
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
         field_type_de_region_target_id:
           id: field_type_de_region_target_id
           table: node__field_type_de_region
@@ -3669,6 +3925,57 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: views_autocomplete_filters_string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Nom
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            placeholder: ''
+            autocomplete_filter: 1
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: title
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
           is_grouped: false
           group_info:
             label: ''
@@ -4142,6 +4449,57 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: views_autocomplete_filters_string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Nom
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            placeholder: ''
+            autocomplete_filter: 1
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: title
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
         field_type_de_lieu_target_id:
           id: field_type_de_lieu_target_id
           table: node__field_type_de_lieu
@@ -4528,6 +4886,57 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: views_autocomplete_filters_string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Nom
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            placeholder: ''
+            autocomplete_filter: 1
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: title
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
           is_grouped: false
           group_info:
             label: ''
