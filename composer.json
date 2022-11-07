@@ -26,7 +26,6 @@
         "drupal/core-recommended": "^9.4",
         "drupal/field_group": "^3.2",
         "drupal/field_permissions": "^1.2",
-        "drupal/mailjet": "^3.0@alpha",
         "drupal/menu_item_role_access": "^2.0",
         "drupal/menu_token": "^9.1@alpha",
         "drupal/paragraphs": "^1.15",

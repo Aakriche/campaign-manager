@@ -20,7 +20,7 @@ settings:
   display_default: false
   uri_scheme: public
   default_image:
-    uuid: 1e5626f8-d4c3-49eb-913f-1b5800289b73
+    uuid: ''
     alt: campagne
     title: ''
     width: 960
