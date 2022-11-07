@@ -1,0 +1,10 @@
+_core:
+  default_config_hash: xv32isu3I93u2lqD8FkaO6ekhZ62Ti5LvVvypKvf7_0
+langcode: fr
+mailjet_username: 2b56043b699517be50e853539e0a95da
+mailjet_password: 6437972359bc0a3d867a944feb4ba209
+mailjet_mail: true
+mailjet_active: true
+mail_headers_allow_html_mailjet: true
+mailjet_title: 'Mailjet API module'
+APItoken: FCB19CB20BD0167A2590052AF229BD052E6A0418C79480CA8EA8FB7D2A774A2C3AD81559BF9D354944080D1AE442FDA5F05AEBA28673F680F9F965E25BF8F62B

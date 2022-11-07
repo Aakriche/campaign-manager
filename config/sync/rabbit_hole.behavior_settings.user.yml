@@ -1,0 +1,12 @@
+uuid: 90e3ceb8-ba05-4d98-9e1d-84b15f4ff761
+langcode: fr
+status: true
+dependencies: {  }
+id: user
+entity_type_id: user
+entity_id: null
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

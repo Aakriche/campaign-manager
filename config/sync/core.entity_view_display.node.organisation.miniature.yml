@@ -1,0 +1,97 @@
+uuid: b06d0dd6-4ab8-46e1-b75b-92745976bf96
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.miniature
+    - field.field.node.organisation.field_image_d_organisation
+    - field.field.node.organisation.field_localisation
+    - field.field.node.organisation.field_objectifs
+    - field.field.node.organisation.field_origine
+    - field.field.node.organisation.field_pnj_associe
+    - field.field.node.organisation.field_public
+    - field.field.node.organisation.field_type_d_organisation
+    - field.field.node.organisation.field_univers
+    - image.style.medium
+    - node.type.organisation
+  module:
+    - field_group
+    - image
+    - user
+third_party_settings:
+  field_group:
+    group_localisation_et_histoire:
+      children:
+        - field_localisation
+      label: Localisation
+      parent_name: group_membres
+      region: hidden
+      weight: 5
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+    group_membres:
+      children:
+        - field_pnj_associe
+        - group_localisation_et_histoire
+      label: Membres
+      parent_name: ''
+      region: hidden
+      weight: 7
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+    group_objectifs:
+      children:
+        - field_objectifs
+      label: Objectifs
+      parent_name: ''
+      region: hidden
+      weight: 6
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+id: node.organisation.miniature
+targetEntityType: node
+bundle: organisation
+mode: miniature
+content:
+  field_image_d_organisation:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_localisation: true
+  field_objectifs: true
+  field_origine: true
+  field_pnj_associe: true
+  field_public: true
+  field_type_d_organisation: true
+  field_univers: true
+  langcode: true

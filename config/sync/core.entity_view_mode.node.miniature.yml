@@ -1,0 +1,10 @@
+uuid: 97716a25-2538-4ca1-8427-20fd4ea65921
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.miniature
+label: miniature
+targetEntityType: node
+cache: true

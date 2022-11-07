@@ -72,7 +72,7 @@ mode: default
 content:
   field_historique:
     type: text_default
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
     weight: 9
