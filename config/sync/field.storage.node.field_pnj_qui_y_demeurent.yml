@@ -1,0 +1,23 @@
+uuid: 73e1f5bc-e96a-48ef-9794-47a62e6df185
+langcode: fr
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_pnj_qui_y_demeurent
+field_name: field_pnj_qui_y_demeurent
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

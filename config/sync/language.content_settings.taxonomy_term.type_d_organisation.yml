@@ -1,0 +1,11 @@
+uuid: 29d3cb38-da16-4589-8338-0b1172e1714f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_d_organisation
+id: taxonomy_term.type_d_organisation
+target_entity_type_id: taxonomy_term
+target_bundle: type_d_organisation
+default_langcode: site_default
+language_alterable: false

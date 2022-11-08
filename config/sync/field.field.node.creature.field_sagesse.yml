@@ -1,0 +1,19 @@
+uuid: adf81b6f-2659-4ddb-86fd-9893bd2fd52c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sagesse
+    - node.type.creature
+id: node.creature.field_sagesse
+field_name: field_sagesse
+entity_type: node
+bundle: creature
+label: Sagesse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

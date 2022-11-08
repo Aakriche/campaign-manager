@@ -1,0 +1,22 @@
+uuid: bf97112b-2440-43d6-812e-9ec2f83a9ba9
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - campaign
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: campaign_content
+theme: campaign
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

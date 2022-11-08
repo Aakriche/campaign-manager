@@ -1,0 +1,25 @@
+uuid: e4378d99-9091-43cb-a5aa-55d2942d4ac4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lieu
+    - node.type.rencontre
+id: node.rencontre.field_lieu
+field_name: field_lieu
+entity_type: node
+bundle: rencontre
+label: Lieu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content_lieu
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

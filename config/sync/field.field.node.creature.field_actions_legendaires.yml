@@ -1,0 +1,21 @@
+uuid: f9d118d1-a8be-4458-88e9-4ae6f1b283e5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actions_legendaires
+    - node.type.creature
+  module:
+    - text
+id: node.creature.field_actions_legendaires
+field_name: field_actions_legendaires
+entity_type: node
+bundle: creature
+label: 'Actions Légendaires'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

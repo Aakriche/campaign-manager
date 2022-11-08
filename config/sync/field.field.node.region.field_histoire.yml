@@ -1,0 +1,21 @@
+uuid: 01d9b300-e3cf-4ba1-8e56-8db354d79665
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_histoire
+    - node.type.region
+  module:
+    - text
+id: node.region.field_histoire
+field_name: field_histoire
+entity_type: node
+bundle: region
+label: Histoire
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

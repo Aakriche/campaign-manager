@@ -1,0 +1,8 @@
+uuid: 96162608-35cc-41b8-be71-37075222c711
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Type de scénario'
+vid: type_d_arc
+description: ''
+weight: 0

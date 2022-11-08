@@ -1,0 +1,22 @@
+uuid: e6bc1073-4dd1-40c1-94cf-63b9520f04a0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.creature
+id: node.creature.status
+field_name: status
+entity_type: node
+bundle: creature
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

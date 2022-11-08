@@ -1,0 +1,128 @@
+uuid: b6f2af44-d7ba-4c71-9701-9fff94ac6dfc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.lieu.field_carte
+    - field.field.node.lieu.field_description
+    - field.field.node.lieu.field_histoire
+    - field.field.node.lieu.field_image_de_lieu
+    - field.field.node.lieu.field_public
+    - field.field.node.lieu.field_se_situe_dans_
+    - field.field.node.lieu.field_type_de_lieu
+    - image.style.large
+    - node.type.lieu
+  module:
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_histoire:
+      children:
+        - field_se_situe_dans_
+        - field_histoire
+      label: 'Histoire et Localisation'
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+    group_cartes:
+      children:
+        - field_carte
+      label: Cartes
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+    group_description:
+      children:
+        - field_description
+      label: Description
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+id: node.lieu.default
+targetEntityType: node
+bundle: lieu
+mode: default
+content:
+  field_carte:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: cartes_dans_contenu
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_histoire:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image_de_lieu:
+    type: image
+    label: hidden
+    settings:
+      image_link: file
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_se_situe_dans_:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_type_de_lieu:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_public: true
+  langcode: true
+  links: true

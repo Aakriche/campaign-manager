@@ -1,0 +1,15 @@
+uuid: 3c462cab-6e8b-4353-b8a2-6f45baf3b0a0
+langcode: fr
+status: true
+dependencies: {  }
+name: card_home
+label: 'card home'
+effects:
+  d9f510c8-e236-4e74-b68b-351fefb5c0c5:
+    uuid: d9f510c8-e236-4e74-b68b-351fefb5c0c5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 450
+      anchor: center-center

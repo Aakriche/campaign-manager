@@ -1,0 +1,7 @@
+uuid: fd0fa06a-a07a-43d6-94b4-b2ff55d5ccf0
+langcode: fr
+status: true
+dependencies: {  }
+id: 748138ab-d7ea-4a4a-b93a-55f58a458bf1
+label: 'Menu token link configuration'
+linkid: 'internal:/user/[current-user:uid]/edit'

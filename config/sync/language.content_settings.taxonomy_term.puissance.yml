@@ -1,0 +1,11 @@
+uuid: b3e6354f-026f-4f96-8411-d9cb7399522e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.puissance
+id: taxonomy_term.puissance
+target_entity_type_id: taxonomy_term
+target_bundle: puissance
+default_langcode: site_default
+language_alterable: false

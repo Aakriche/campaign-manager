@@ -1,0 +1,62 @@
+uuid: 1c0ff49b-d1d5-4216-81fa-f263f353a43d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - node.type.campagne
+    - node.type.creature
+    - node.type.lieu
+    - node.type.organisation
+    - node.type.page_d_accueil
+    - node.type.pnj
+    - node.type.region
+    - node.type.rencontre
+    - node.type.scenario
+  module:
+    - comment
+    - contact
+    - filter
+    - node
+    - rabbit_hole
+    - shortcut
+    - system
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Utilisateur authentifié'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'create campagne content'
+  - 'create creature content'
+  - 'create lieu content'
+  - 'create organisation content'
+  - 'create pnj content'
+  - 'create region content'
+  - 'create rencontre content'
+  - 'create scenario content'
+  - 'delete own creature content'
+  - 'delete own lieu content'
+  - 'delete own organisation content'
+  - 'delete own page_d_accueil content'
+  - 'delete own pnj content'
+  - 'delete own region content'
+  - 'delete own rencontre content'
+  - 'delete own scenario content'
+  - 'edit own creature content'
+  - 'edit own lieu content'
+  - 'edit own organisation content'
+  - 'edit own page_d_accueil content'
+  - 'edit own pnj content'
+  - 'edit own region content'
+  - 'edit own rencontre content'
+  - 'edit own scenario content'
+  - 'post comments'
+  - 'rabbit hole bypass node'
+  - 'skip comment approval'
+  - 'use text format basic_html'

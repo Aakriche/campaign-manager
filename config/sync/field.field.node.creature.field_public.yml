@@ -1,0 +1,23 @@
+uuid: 18a708b8-2a88-4341-8743-7a9d7cc52682
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public
+    - node.type.creature
+id: node.creature.field_public
+field_name: field_public
+entity_type: node
+bundle: creature
+label: Public
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

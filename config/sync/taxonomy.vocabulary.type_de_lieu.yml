@@ -1,0 +1,8 @@
+uuid: 4e81c000-82e7-4bc1-8bab-fd9223f0816e
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Type de lieu'
+vid: type_de_lieu
+description: ''
+weight: 0

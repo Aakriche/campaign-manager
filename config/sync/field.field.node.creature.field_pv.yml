@@ -1,0 +1,19 @@
+uuid: ed9e7e8f-a3cc-4455-baac-ae5c2418c4dc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pv
+    - node.type.creature
+id: node.creature.field_pv
+field_name: field_pv
+entity_type: node
+bundle: creature
+label: PV
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

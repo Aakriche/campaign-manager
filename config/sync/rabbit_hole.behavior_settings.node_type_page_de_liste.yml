@@ -1,0 +1,14 @@
+uuid: 6548688a-498e-408c-a528-f4af52b99e1f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.page_de_liste
+id: node_type_page_de_liste
+entity_type_id: node_type
+entity_id: page_de_liste
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

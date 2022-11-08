@@ -1,0 +1,8 @@
+uuid: 26ec7567-e9f3-4d37-82d0-6f7d56e14d86
+langcode: fr
+status: true
+dependencies: {  }
+id: add-menu
+label: 'Menu d''ajout'
+description: 'Menu avec les liens pour ajouter des contenus'
+locked: false

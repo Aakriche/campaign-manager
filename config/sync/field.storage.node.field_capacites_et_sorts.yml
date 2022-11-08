@@ -1,0 +1,19 @@
+uuid: 4200febc-5580-4a1e-9bff-075ba7ee93de
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_capacites_et_sorts
+field_name: field_capacites_et_sorts
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

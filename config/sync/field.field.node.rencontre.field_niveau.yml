@@ -1,0 +1,29 @@
+uuid: 283e6934-959a-4554-9ff7-7e03247464f1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_niveau
+    - node.type.rencontre
+    - taxonomy.vocabulary.niveau_des_pj
+id: node.rencontre.field_niveau
+field_name: field_niveau
+entity_type: node
+bundle: rencontre
+label: Niveau
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      niveau_des_pj: niveau_des_pj
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

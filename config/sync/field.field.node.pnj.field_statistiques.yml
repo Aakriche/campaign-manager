@@ -1,0 +1,25 @@
+uuid: f8820530-4b83-4214-b21f-a7d8817de64b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_statistiques
+    - node.type.pnj
+id: node.pnj.field_statistiques
+field_name: field_statistiques
+entity_type: node
+bundle: pnj
+label: Statistiques
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content_creature
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

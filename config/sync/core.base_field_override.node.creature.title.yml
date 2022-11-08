@@ -1,0 +1,18 @@
+uuid: 8973af68-bced-4a20-adb0-5ad9b8ae7cbc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.creature
+id: node.creature.title
+field_name: title
+entity_type: node
+bundle: creature
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

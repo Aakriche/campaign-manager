@@ -1,0 +1,38 @@
+uuid: ebb8f8b7-6ccb-4a16-91c3-b1346a194b4e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_d_organisation
+    - node.type.organisation
+  module:
+    - image
+id: node.organisation.field_image_d_organisation
+field_name: field_image_d_organisation
+entity_type: node
+bundle: organisation
+label: 'image d''organisation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: c19883b7-ee83-4e47-954a-3c72f0da1937
+    alt: ''
+    title: ''
+    width: 960
+    height: 640
+field_type: image

@@ -1,0 +1,18 @@
+uuid: 94ebb325-5b7b-440d-90f2-d712f6999047
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: PNJ
+type: pnj
+description: 'Créer un personnage non-joueur comme un allié, un ennemi, un marchand, une divinité, le chef d''un clan etc.. Vous pourrez lui attribuer un profil de créature.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

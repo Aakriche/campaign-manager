@@ -1,0 +1,14 @@
+uuid: e509a992-89b6-48c6-b760-c2cb22adb298
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.rencontre
+id: node_type_rencontre
+entity_type_id: node_type
+entity_id: rencontre
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

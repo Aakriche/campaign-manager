@@ -1,0 +1,8 @@
+uuid: 75466fb0-5822-4798-b5cc-d2e98b2794ac
+langcode: fr
+status: true
+dependencies: {  }
+name: Région
+vid: region
+description: ''
+weight: 0

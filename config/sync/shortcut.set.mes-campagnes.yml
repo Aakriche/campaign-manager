@@ -1,0 +1,6 @@
+uuid: 35b26db9-3829-4d0a-84db-4dc282b091da
+langcode: fr
+status: true
+dependencies: {  }
+id: mes-campagnes
+label: 'Gérer mes contenus'

@@ -1,0 +1,37 @@
+uuid: 0aa8ee27-7a68-4bdd-80db-e266267ec083
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.organisation.field_image_d_organisation
+    - field.field.node.organisation.field_localisation
+    - field.field.node.organisation.field_objectifs
+    - field.field.node.organisation.field_origine
+    - field.field.node.organisation.field_pnj_associe
+    - field.field.node.organisation.field_public
+    - field.field.node.organisation.field_type_d_organisation
+    - field.field.node.organisation.field_univers
+    - node.type.organisation
+  module:
+    - user
+id: node.organisation.teaser
+targetEntityType: node
+bundle: organisation
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image_d_organisation: true
+  field_localisation: true
+  field_objectifs: true
+  field_origine: true
+  field_pnj_associe: true
+  field_public: true
+  field_type_d_organisation: true
+  field_univers: true
+  langcode: true

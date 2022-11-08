@@ -1,0 +1,11 @@
+uuid: 89998084-0c9a-439e-9bca-168d33e88d83
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_de_lieu
+id: taxonomy_term.type_de_lieu
+target_entity_type_id: taxonomy_term
+target_bundle: type_de_lieu
+default_langcode: site_default
+language_alterable: false

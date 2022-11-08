@@ -1,0 +1,32 @@
+uuid: cbab8290-59ed-43f5-aab2-ca25c52ec9a0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_view_de_liste
+    - node.type.page_de_liste
+  module:
+    - block_field
+id: node.page_de_liste.field_view_de_liste
+field_name: field_view_de_liste
+entity_type: node
+bundle: page_de_liste
+label: 'View de liste'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:les_contenus-block_8': 'views_block:les_contenus-block_8'
+      'views_block:les_contenus-block_1': 'views_block:les_contenus-block_1'
+      'views_block:les_contenus-block_7': 'views_block:les_contenus-block_7'
+      'views_block:les_contenus-block_3': 'views_block:les_contenus-block_3'
+      'views_block:les_contenus-block_2': 'views_block:les_contenus-block_2'
+      'views_block:les_contenus-block_4': 'views_block:les_contenus-block_4'
+      'views_block:les_contenus-block_5': 'views_block:les_contenus-block_5'
+      'views_block:les_contenus-block_6': 'views_block:les_contenus-block_6'
+field_type: block_field

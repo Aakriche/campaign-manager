@@ -1,0 +1,29 @@
+uuid: 1f92b850-98f7-4a24-a39b-a7e6f6a057bf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_typecreature
+    - node.type.creature
+    - taxonomy.vocabulary.type_de_creature
+id: node.creature.field_typecreature
+field_name: field_typecreature
+entity_type: node
+bundle: creature
+label: 'Type de creature'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_de_creature: type_de_creature
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

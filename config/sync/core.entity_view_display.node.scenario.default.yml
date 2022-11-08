@@ -1,0 +1,239 @@
+uuid: 0a50a307-6d7f-4c02-8f97-74c423dd6168
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.scenario.field_carte
+    - field.field.node.scenario.field_creature
+    - field.field.node.scenario.field_etapes
+    - field.field.node.scenario.field_events
+    - field.field.node.scenario.field_image_scenario
+    - field.field.node.scenario.field_lieu_de_scenario
+    - field.field.node.scenario.field_organisation
+    - field.field.node.scenario.field_pnj_qui_y_demeurent
+    - field.field.node.scenario.field_public
+    - field.field.node.scenario.field_rencontres
+    - field.field.node.scenario.field_se_situe_dans_
+    - field.field.node.scenario.field_situation_initiale
+    - field.field.node.scenario.field_type_de_scenario
+    - field.field.node.scenario.field_univers
+    - image.style.large
+    - node.type.scenario
+  module:
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_lieux:
+      children:
+        - field_lieu_de_scenario
+        - field_se_situe_dans_
+      label: Lieux
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+    group_personnages_et_organisatio:
+      children:
+        - field_pnj_qui_y_demeurent
+        - field_creature
+        - field_organisation
+      label: 'Personnages et organisations'
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+    group_situation_initiale:
+      children:
+        - field_situation_initiale
+      label: 'Situation initiale'
+      parent_name: ''
+      region: content
+      weight: 6
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+    group_evenements_et_intrigues:
+      children:
+        - field_events
+      label: 'Evenements et intrigues'
+      parent_name: ''
+      region: content
+      weight: 7
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+    group_etapes_et_scenarios:
+      children:
+        - field_etapes
+        - field_rencontres
+      label: 'Etapes et rencontres'
+      parent_name: ''
+      region: content
+      weight: 8
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+    group_cartes:
+      children:
+        - field_carte
+      label: Cartes
+      parent_name: ''
+      region: content
+      weight: 9
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+        weight: 0
+id: node.scenario.default
+targetEntityType: node
+bundle: scenario
+mode: default
+content:
+  field_carte:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: file
+      image_style: cartes_dans_contenu
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_creature:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_etapes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_events:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_image_scenario:
+    type: image
+    label: hidden
+    settings:
+      image_link: file
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_lieu_de_scenario:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_organisation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_pnj_qui_y_demeurent:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_rencontres:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_se_situe_dans_:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_situation_initiale:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_type_de_scenario:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_univers:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_public: true
+  langcode: true

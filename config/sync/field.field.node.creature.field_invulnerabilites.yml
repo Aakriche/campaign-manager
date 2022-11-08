@@ -1,0 +1,19 @@
+uuid: f6f5fd2a-ce10-48d8-b8b6-c4ea7791cd95
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_invulnerabilites
+    - node.type.creature
+id: node.creature.field_invulnerabilites
+field_name: field_invulnerabilites
+entity_type: node
+bundle: creature
+label: Invulnérabilités
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

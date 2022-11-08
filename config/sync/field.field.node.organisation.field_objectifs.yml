@@ -1,0 +1,21 @@
+uuid: ba45e35b-302e-4a9f-8ff7-ec022c98758a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_objectifs
+    - node.type.organisation
+  module:
+    - text
+id: node.organisation.field_objectifs
+field_name: field_objectifs
+entity_type: node
+bundle: organisation
+label: Objectifs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

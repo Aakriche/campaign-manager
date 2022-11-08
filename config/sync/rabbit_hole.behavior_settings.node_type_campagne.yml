@@ -1,0 +1,14 @@
+uuid: 4668f542-1d45-4086-a021-f26390cc6fc1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.campagne
+id: node_type_campagne
+entity_type_id: node_type
+entity_id: campagne
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

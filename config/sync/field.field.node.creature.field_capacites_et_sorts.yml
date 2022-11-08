@@ -1,0 +1,21 @@
+uuid: effc337b-7ee1-4e03-bf9c-0c58c9c990d8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_capacites_et_sorts
+    - node.type.creature
+  module:
+    - text
+id: node.creature.field_capacites_et_sorts
+field_name: field_capacites_et_sorts
+entity_type: node
+bundle: creature
+label: 'Capacités et sorts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

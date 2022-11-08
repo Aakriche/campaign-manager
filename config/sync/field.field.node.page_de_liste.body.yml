@@ -1,0 +1,23 @@
+uuid: 95f110cd-4368-40bd-92ec-f4f88042c6da
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.page_de_liste
+  module:
+    - text
+id: node.page_de_liste.body
+field_name: body
+entity_type: node
+bundle: page_de_liste
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,25 @@
+uuid: a25b8574-5114-4273-8a25-b8ed12ef3f0e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contient_
+    - node.type.region
+id: node.region.field_contient_
+field_name: field_contient_
+entity_type: node
+bundle: region
+label: 'Lieux et Regions englobées'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

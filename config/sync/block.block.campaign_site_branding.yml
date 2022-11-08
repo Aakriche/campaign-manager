@@ -1,0 +1,25 @@
+uuid: 28e0427a-09f7-48f7-bb10-3fdb0845bcd1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - campaign
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: campaign_site_branding
+theme: campaign
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

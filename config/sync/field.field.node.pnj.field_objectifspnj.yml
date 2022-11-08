@@ -1,0 +1,21 @@
+uuid: cb67e0d6-9ad3-4137-be5f-898d6c439cef
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_objectifspnj
+    - node.type.pnj
+  module:
+    - text
+id: node.pnj.field_objectifspnj
+field_name: field_objectifspnj
+entity_type: node
+bundle: pnj
+label: Objectifs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

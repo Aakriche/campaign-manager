@@ -1,0 +1,25 @@
+uuid: 08a30c2a-c7df-4e83-8a2b-6a5173801538
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mes_contenus
+    - node.type.page
+  module:
+    - block_field
+id: node.page.field_mes_contenus
+field_name: field_mes_contenus
+entity_type: node
+bundle: page
+label: 'mes contenus'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:mes_creations-block_1': 'views_block:mes_creations-block_1'
+field_type: block_field

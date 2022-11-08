@@ -1,0 +1,21 @@
+uuid: 8d4c5f5e-34cf-4520-b8da-6c7fc4650fb5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_sensibilites
+field_name: field_sensibilites
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

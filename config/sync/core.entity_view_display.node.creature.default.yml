@@ -1,0 +1,357 @@
+uuid: 713d72cc-053e-4ff8-a2b4-7c8f8701f145
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.creature.field_actions
+    - field.field.node.creature.field_actions_legendaires
+    - field.field.node.creature.field_alignement
+    - field.field.node.creature.field_ca
+    - field.field.node.creature.field_capacites_et_sorts
+    - field.field.node.creature.field_charisme
+    - field.field.node.creature.field_constitution
+    - field.field.node.creature.field_descriptioncreature
+    - field.field.node.creature.field_dexterite
+    - field.field.node.creature.field_force
+    - field.field.node.creature.field_image_d_illustration
+    - field.field.node.creature.field_intelligence
+    - field.field.node.creature.field_invulnerabilites
+    - field.field.node.creature.field_jets_de_sauvegarde
+    - field.field.node.creature.field_langues
+    - field.field.node.creature.field_origine
+    - field.field.node.creature.field_public
+    - field.field.node.creature.field_puissance
+    - field.field.node.creature.field_pv
+    - field.field.node.creature.field_resistances
+    - field.field.node.creature.field_sagesse
+    - field.field.node.creature.field_sens
+    - field.field.node.creature.field_sensibilites
+    - field.field.node.creature.field_typecreature
+    - field.field.node.creature.field_vitesse
+    - image.style.large
+    - node.type.creature
+  module:
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - field_ca
+        - field_pv
+        - field_vitesse
+      label: 'Défense et Vitesse'
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: defense_vitesse
+        open: false
+        description: ''
+    group_caracteristiques:
+      children:
+        - field_force
+        - field_dexterite
+        - field_constitution
+        - field_intelligence
+        - field_sagesse
+        - field_charisme
+      label: Caractéristiques
+      parent_name: ''
+      region: content
+      weight: 6
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: carac
+        open: false
+        description: ''
+    group_jets_de_sauvegarde_et_modi:
+      children:
+        - field_jets_de_sauvegarde
+      label: 'Jets de sauvegarde et modificateurs'
+      parent_name: ''
+      region: content
+      weight: 7
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+    group_resistances_immunites_et_s:
+      children:
+        - field_resistances
+        - field_invulnerabilites
+        - field_sensibilites
+        - field_sens
+        - field_langues
+        - field_puissance
+      label: 'Resistances, Langues et Sens'
+      parent_name: ''
+      region: content
+      weight: 8
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+    group_capacites_et_sorts:
+      children:
+        - field_capacites_et_sorts
+      label: 'Capacités et Sorts'
+      parent_name: ''
+      region: content
+      weight: 9
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+    group_actions:
+      children:
+        - field_actions
+      label: Actions
+      parent_name: ''
+      region: content
+      weight: 10
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+    group_actions_legendaires:
+      children:
+        - field_actions_legendaires
+      label: 'Actions légendaires'
+      parent_name: ''
+      region: content
+      weight: 11
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+id: node.creature.default
+targetEntityType: node
+bundle: creature
+mode: default
+content:
+  field_actions:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_actions_legendaires:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_alignement:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_ca:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_capacites_et_sorts:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_charisme:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_constitution:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_descriptioncreature:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_dexterite:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_force:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image_d_illustration:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_intelligence:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_invulnerabilites:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_jets_de_sauvegarde:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_langues:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_origine:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_puissance:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_pv:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_resistances:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_sagesse:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_sens:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_sensibilites:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_typecreature:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_vitesse:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_public: true
+  langcode: true

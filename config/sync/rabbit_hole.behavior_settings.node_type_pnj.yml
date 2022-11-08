@@ -1,0 +1,14 @@
+uuid: acf64cc9-7ee3-4bb7-909e-bdd3f8d959d3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.pnj
+id: node_type_pnj
+entity_type_id: node_type
+entity_id: pnj
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

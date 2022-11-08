@@ -1,0 +1,25 @@
+uuid: 313769aa-b8e6-4961-bea1-aa68d61d419d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisation
+    - node.type.pnj
+id: node.pnj.field_organisation
+field_name: field_organisation
+entity_type: node
+bundle: pnj
+label: Organisation
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content_organisation
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

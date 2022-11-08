@@ -1,0 +1,19 @@
+uuid: 5b48ce69-bf41-4b68-bb48-bcb4d6ab508d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_actions_legendaires
+field_name: field_actions_legendaires
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

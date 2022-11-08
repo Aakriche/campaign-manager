@@ -1,0 +1,34 @@
+uuid: 61d58a64-f840-4a32-9348-5af4ff5ae17b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lien
+    - node.type.page
+    - paragraphs.paragraphs_type.lien_interne
+  module:
+    - entity_reference_revisions
+id: node.page.field_lien
+field_name: field_lien
+entity_type: node
+bundle: page
+label: Lien
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      lien_interne: lien_interne
+    negate: 0
+    target_bundles_drag_drop:
+      block_vue:
+        weight: 3
+        enabled: false
+      lien_interne:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

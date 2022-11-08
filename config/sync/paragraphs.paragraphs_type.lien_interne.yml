@@ -1,0 +1,10 @@
+uuid: c388dad1-85a8-48f8-9e2d-4bcfb2891ba9
+langcode: fr
+status: true
+dependencies: {  }
+id: lien_interne
+label: 'Lien interne'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

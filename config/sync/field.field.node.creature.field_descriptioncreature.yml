@@ -1,0 +1,21 @@
+uuid: a194c765-2458-49d7-bb6c-53d5ab6417a8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descriptioncreature
+    - node.type.creature
+  module:
+    - text
+id: node.creature.field_descriptioncreature
+field_name: field_descriptioncreature
+entity_type: node
+bundle: creature
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

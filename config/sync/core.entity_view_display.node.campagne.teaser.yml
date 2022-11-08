@@ -1,0 +1,31 @@
+uuid: a9b4dab5-9e14-4649-b8ff-303adeb27dd0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.campagne.field_etapes
+    - field.field.node.campagne.field_image_d_illustration
+    - field.field.node.campagne.field_public
+    - field.field.node.campagne.field_resume
+    - field.field.node.campagne.field_univers
+    - node.type.campagne
+  module:
+    - user
+id: node.campagne.teaser
+targetEntityType: node
+bundle: campagne
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_etapes: true
+  field_image_d_illustration: true
+  field_public: true
+  field_resume: true
+  field_univers: true
+  langcode: true

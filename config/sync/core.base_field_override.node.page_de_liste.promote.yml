@@ -1,0 +1,22 @@
+uuid: 33249ae2-0591-48f0-b5aa-ec8731c1eca1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.page_de_liste
+id: node.page_de_liste.promote
+field_name: promote
+entity_type: node
+bundle: page_de_liste
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

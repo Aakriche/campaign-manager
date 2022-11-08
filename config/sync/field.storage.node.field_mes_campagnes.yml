@@ -1,0 +1,23 @@
+uuid: dc072640-5f13-4da4-aa02-d826fc0eb32c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_field
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_mes_campagnes
+field_name: field_mes_campagnes
+entity_type: node
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

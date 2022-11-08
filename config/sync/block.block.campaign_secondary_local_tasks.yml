@@ -1,0 +1,22 @@
+uuid: 401c354e-12d3-4d62-add6-faac36c3f8ba
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - campaign
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: campaign_secondary_local_tasks
+theme: campaign
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

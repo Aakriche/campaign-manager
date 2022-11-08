@@ -1,0 +1,23 @@
+uuid: 5cb9fb6a-eb03-46b2-834d-f8ea21146f4b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public
+    - node.type.campagne
+id: node.campagne.field_public
+field_name: field_public
+entity_type: node
+bundle: campagne
+label: Public
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

@@ -1,0 +1,25 @@
+uuid: e0d06efb-12d3-4584-a51a-11ec58dfbfa8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_se_situe_dans_
+    - node.type.region
+id: node.region.field_se_situe_dans_
+field_name: field_se_situe_dans_
+entity_type: node
+bundle: region
+label: Localisation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content_region
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

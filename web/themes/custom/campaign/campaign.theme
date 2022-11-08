@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming
+ */
+
+use \Drupal\Core\Asset\AttachedAssetsInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_css_alter().
+ */
+function campaign_css_alter(&$css, AttachedAssetsInterface $assets) {
+  $oliveroThemePath = drupal_get_path('theme', 'olivero');
+  $myThemePath = drupal_get_path('theme', 'campaign');
+  // Replace all css files by our files.
+  foreach ($css as $cssFile => $value) {
+    if (strpos($cssFile, $oliveroThemePath) !== FALSE) {
+      $css[$cssFile]['data'] = str_replace($oliveroThemePath, $myThemePath, $css[$cssFile]['data']);
+    }
+  }
+}
+
+function campaign_preprocess_field(&$variables)
+{
+$fieldsname = ["field_image_de_lieu", "field_image_d_organisation", "field_image_scenario", "field_image_d_illustration", "field_image_de_lieu","field_image_de_region", "field_image_de_creature", "field_image_de_pnj"];
+    if(in_array($variables['element']['#field_name'], $fieldsname)){
+      unset($variables['attributes']['class'][0]);
+    }
+
+}
+
+function campaign_preprocess_form_element(&$variables, $form){
+  if(array_key_exists("#multiple",$variables['element']) ){
+    if(isset($variables['element']['#multiple'])){
+      $variables['attributes']['class'][0] = 'm-2';
+      $variables['attributes']['class'][1] = 'mt-2';
+      $variables['attributes']['class'][1] = 'pt-1';
+    }
+  }
+
+}
+
+
+function campaign_form_alter(&$form, $form_state, $form_id){
+
+  if($form_id == 'views_exposed_form') {
+    $multipletrue = "#multiple";
+    foreach ($form as &$field) {
+      if (is_array($field)){
+        if (array_key_exists($multipletrue, $field)) {
+          if (count($field['#options']) > 3) {
+            $field['#size'] = 4;
+          } else {
+            $field['#size'] = count($field['#options']);
+            }
+        }
+      }
+    }
+  }
+}
+

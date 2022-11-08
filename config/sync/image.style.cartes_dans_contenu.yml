@@ -1,0 +1,15 @@
+uuid: 2d66bb35-762b-4c72-9899-45d3ea48a6b2
+langcode: fr
+status: true
+dependencies: {  }
+name: cartes_dans_contenu
+label: 'cartes dans contenu'
+effects:
+  c0a8c616-7340-4405-9538-0d3d7b9a3347:
+    uuid: c0a8c616-7340-4405-9538-0d3d7b9a3347
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 400
+      anchor: center-center

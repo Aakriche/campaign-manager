@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for user_dash module.
+ */
+
+
+//deny access when public isn't checked
+function user_dash_preprocess_node($variables){
+
+  //get logged username
+  $user =\Drupal::currentUser();
+  $username = $user->getAccountName();
+
+  $node = \Drupal::request()->attributes->get('node');
+
+  //get node author
+  if (!is_null($node)) {
+    $uid = $node->getOwnerId();
+    $author = \Drupal\user\Entity\User::load($uid);
+    if (!is_null($user)) {
+      $authorname = $author->getDisplayName();
+        $variables['$authorname'] = $authorname;
+      // {{ username }} will be available within block.html.twig.
+    }
+  }
+
+  //get content type
+  if (!is_null($node)) {
+    $nid = $node->id();
+    $contenttype = \Drupal\node\Entity\Node::load($nid);
+    if (!is_null($user)) {
+      $content_type_name = $contenttype->getType();
+        $variables['$content_type_name'] = $content_type_name;
+    }
+  }
+//only in these nodes
+  if(isset($variables['$content_type_name'])) {
+    $nodes = ['rencontre', 'lieu', 'creature', 'campagne', 'organisation', 'pnj', 'region', 'scenario'];
+    if(in_array($variables['$content_type_name'], $nodes)) {
+      ///get field_public value
+      if (!is_null($node)) {
+        $publicvalue = $node->get('field_public')->getValue();
+        if(isset($publicvalue)) {
+          $variables['$public_value'] = $publicvalue[0]["value"];
+        }
+      }
+    }
+  }
+
+  if($variables["is_admin"] === false) {
+    if (isset($authorname) & isset($variables['$public_value'])) {
+      if ($username !== $authorname) {
+        if ($variables['$public_value'] === "0") {
+          throw new \Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException();
+
+        }
+      }
+    }
+  }
+}

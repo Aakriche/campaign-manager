@@ -1,0 +1,25 @@
+uuid: cccb4e68-b574-40d0-bb53-bc675b8ebf61
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pnj_associe
+    - node.type.organisation
+id: node.organisation.field_pnj_associe
+field_name: field_pnj_associe
+entity_type: node
+bundle: organisation
+label: 'PNJ associé'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content_pnj
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

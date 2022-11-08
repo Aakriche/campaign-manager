@@ -1,0 +1,23 @@
+uuid: 5edb22cf-cd12-4e97-b7d1-6b279795b9a2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public
+    - node.type.lieu
+id: node.lieu.field_public
+field_name: field_public
+entity_type: node
+bundle: lieu
+label: Public
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

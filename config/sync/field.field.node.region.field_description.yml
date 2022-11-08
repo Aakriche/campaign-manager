@@ -1,0 +1,21 @@
+uuid: 7f5eba85-bfa0-4727-9c19-de09f1b1a009
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.region
+  module:
+    - text
+id: node.region.field_description
+field_name: field_description
+entity_type: node
+bundle: region
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

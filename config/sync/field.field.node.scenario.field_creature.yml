@@ -1,0 +1,25 @@
+uuid: 9893def0-80ed-4213-bc08-626ab4ad1f1b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_creature
+    - node.type.scenario
+id: node.scenario.field_creature
+field_name: field_creature
+entity_type: node
+bundle: scenario
+label: Créature
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: referenced_content_creature
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

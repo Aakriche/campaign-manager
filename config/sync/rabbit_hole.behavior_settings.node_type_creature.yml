@@ -1,0 +1,14 @@
+uuid: cf7db1e9-748f-46bf-93ed-77ef4cf00456
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.creature
+id: node_type_creature
+entity_type_id: node_type
+entity_id: creature
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

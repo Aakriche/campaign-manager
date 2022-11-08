@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: fr
+uuid: ad298533-6c6a-4947-af0a-0352b70948e9
+name: 'L''Antre du caneton'
+mail: amaury@akriche.com
+slogan: 'Toutes vos ressources officielles ou non pour votre jeu de rôle préféré.'
+page:
+  403: ''
+  404: ''
+  front: /node/61
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: fr

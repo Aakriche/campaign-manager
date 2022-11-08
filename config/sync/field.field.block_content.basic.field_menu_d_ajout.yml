@@ -1,0 +1,34 @@
+uuid: 3c57c96b-39f3-49fb-ab1a-36a2caefae32
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_menu_d_ajout
+  module:
+    - block_field
+id: block_content.basic.field_menu_d_ajout
+field_name: field_menu_d_ajout
+entity_type: block_content
+bundle: basic
+label: 'menu d''ajout'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    plugin_id: 'system_menu_block:add-menu'
+    settings:
+      provider: system
+      label: 'Menu d''ajout'
+      label_display: ''
+      level: '1'
+      depth: '0'
+      expand_all_items: '0'
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'system_menu_block:add-menu': 'system_menu_block:add-menu'
+field_type: block_field

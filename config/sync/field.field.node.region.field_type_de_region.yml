@@ -1,0 +1,29 @@
+uuid: 4e32e887-cece-4c28-bc9d-26f9dc79efa2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_de_region
+    - node.type.region
+    - taxonomy.vocabulary.region
+id: node.region.field_type_de_region
+field_name: field_type_de_region
+entity_type: node
+bundle: region
+label: 'Type de région'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      region: region
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
